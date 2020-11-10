@@ -11,7 +11,11 @@ class Router:
         @app.route('/daftar-komik')
         def daftar_komik():
             return model.getDaftarKomik()
-        
+			
+        @app.route('/komikgenre')
+        def komikgenre():
+            return model.getKomikGenre()
+			
         @app.route('/project-list')
         def project_list():
             return model.getProjectList()
